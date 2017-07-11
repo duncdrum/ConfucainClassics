@@ -1,3 +1,3 @@
 # ConfucainClassics
-Confucain Classics Project
+Confucian Classics Project
 A project for eXist-db platform web app
