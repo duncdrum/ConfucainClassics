@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Confucian Classics</description>
+    <author/>
+    <website/>
+    <status>alpha</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>cc</target>
+    <prepare>pre-install.xql</prepare>
+    <finish/>
+    <permissions user="admin" group="dba" mode="rw-rw-r--"/>
+<deployed>2017-03-13T12:32:05.476+08:00</deployed>
+</meta>
