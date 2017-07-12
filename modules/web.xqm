@@ -13,7 +13,7 @@ declare variable $web:homepage :=
     </div>;
 declare variable $web:homepageRight :=
         <p>請點選功能表中的選項，或是利用上列的檢索表單進行本站的檢索。</p>;
-        
+
 declare function web:webpage($leftnode as node(), $rightnode as node(), $titleID as xs:string?){
 <div class="row">
         <div class="col-md-9">
@@ -23,7 +23,7 @@ declare function web:webpage($leftnode as node(), $rightnode as node(), $titleID
                 <p>本網站網頁利用<a href="http://twitter.github.com/bootstrap/">Bootstrap</a>
                     CSS 資源庫來呈現。</p>
                 <p><img width="120px" height="40px" src="http://exist-db.org/exist/apps/homepage/resources/img/existdb.gif" alt="eXist-db"/><a href="http://exist-db.org/exist/apps/homepage/index.html">eXistdb</a> is Open Source Software licensed under the LGPL</p>
-                <p>您可以下載本網站所有檔案壓縮檔<a href="http://tinyurl.com/cc_xar_file">cc-01.xar</a>，並裝到自己設置的eXistdb平台使用。點選連結後，請按左上角下載鍵。目前更新版本2017-07-09。</p>
+                <p>您可以下載本網站所有檔案壓縮檔<a href="https://github.com/duncdrum/ConfucianClassics/releases/latest">cc-XX.xar</a>，並裝到自己設置的eXistdb平台使用。點選連結後，請按左上角下載鍵。目前更新版本2017-07-09。</p>
             </div>
             <div class="col-md-6">
                 <p>若對本網站有什麼建議指教，歡迎連絡：<a href="mailto:dh@ptc.cl.nthu.edu.tw">祝平次</a>。</p>
