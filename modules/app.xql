@@ -5,11 +5,11 @@ module namespace app="http://exist-db.org/apps/cc/templates";
 import module namespace templates="http://exist-db.org/xquery/templates";
 import module namespace config="http://exist-db.org/apps/cc/config" at "config.xqm";
 import module namespace web="http://exist-db.org/apps/cc/web" at "web.xqm";
-import module namespace functx="http://www.functx.com" at "../../shared-resources/content/functx.xql";
+import module namespace functx="http://www.functx.com" at "functx.xql";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 
 (:page 主頁面唯一程式，擷取網頁變數：coll-資料集、titleID-文本識別碼、path-資料路徑、mode：操作模式選項；之後可以考慮是否以POST傳送，方便傳遞參數:)
-declare function app:page($node as node(), $model as map(*), $mode as xs:string?, $path as xs:string?, $titleId as xs:string?, $file as xs:string?){
+declare function app:page($node as node(), $model as map(*), $mode as xs:string?, $path as xs:string?, $titleId as xs:string?, $file as xs:string?, $query as xs:string?){
 let $book := (:取得文本資訊:)
     if ($titleId) then doc($config:data-root||"/list.xml")//tei:bibl[data(@n)=$titleId]
     else ()
